@@ -1,13 +1,15 @@
+# CORREÇÃO DOS IMPORTS - use ESTE código:
 import cv2
 import numpy as np
-import google.generativeai as genai  # Correto: google.generativeai
+import google.generativeai as genai  # ✅ CORRETO
 import tempfile
 import os
-from moviepy.editor import VideoFileClip  # Correto: moviepy.editor
+from moviepy.editor import VideoFileClip  # ✅ CORRETO
 import base64
 import time
 from PIL import Image
 import argparse
+import sys
 class LipReadingSystem:
     def __init__(self, api_key):
         """
